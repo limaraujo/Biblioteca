@@ -50,13 +50,14 @@ A organização dos materiais segue a grade curricular:
 ## 🛠 Tecnologias e Ferramentas
 
 - **React**: Biblioteca para criação da interface do usuário.
+- **Vite**: Ferramenta para build otimizada e rápida.
 - **JavaScript**: Linguagem principal para o desenvolvimento das funcionalidades.
 - **HTML e CSS**: Estrutura e estilo da aplicação.
 - **Markdown**: Para formatação dos textos base.
 - **Git e GitHub**: Para controle de versão e colaboração.
 - **PDF/LaTeX**: Para documentos mais complexos.
 - **VSCode** ou **Zsh Terminal**: Ferramentas recomendadas para visualização e contribuição.
-- 
+- **Google Drive**: Para armazenamento dos matérias.
 
 ---
 

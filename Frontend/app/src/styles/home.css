@@ -108,6 +108,13 @@ header h1 {
   border: 2px solid #f9b421;
 }
 
+/* Remove o sublinhado de botões ou links */
+button, a {
+  text-decoration: none; /* Remove o sublinhado de links */
+  outline: none; /* Remove o contorno (bordas) quando o botão/link é focado */
+}
+
+
 /* Media Query para telas menores */
 @media (max-width: 768px) {
   header h1 {

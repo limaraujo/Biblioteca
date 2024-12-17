@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Home.css";
+import "../styles/home.css";
 
 import ALVC from "../images/ALVC.png";
 import ALGORITMOS from "../images/algoritmos.png";
@@ -14,6 +14,7 @@ import LOGICA from "../images/logica.png";
 import MATEMATICA from "../images/matematica.png";
 import SISTEMAS from "../images/sistemas.png";
 
+// Dados das matérias
 const materias = [
   {
     nome: "Álgebra Vetorial e Linear",
@@ -77,11 +78,25 @@ const materias = [
   },
 ];
 
-const GenreSelection = () => {
-  const handleRedirect = (link) => {
-    window.location.href = link;
-  };
+// Componente para renderizar uma matéria
+const MateriaCard = ({ materia }) => {
+  return (
+    <a
+      href={materia.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="materia"
+    >
+      <div id="box-cadeira">
+        <img src={materia.imgSrc} alt={materia.nome} />
+        <h2>{materia.nome}</h2>
+      </div>
+    </a>
+  );
+};
 
+// Componente principal renomeado para Home
+const Home = () => {
   return (
     <div className="main_container">
       <header>
@@ -90,22 +105,11 @@ const GenreSelection = () => {
 
       <div className="materias">
         {materias.map((materia, index) => (
-          <div
-            key={index}
-            className="materia"
-            onClick={() => handleRedirect(materia.link)}
-            role="button"
-            tabIndex="0"
-          >
-            <div id="box-cadeira">
-              <img src={materia.imgSrc} alt={materia.nome} />
-              <h2>{materia.nome}</h2>
-            </div>
-          </div>
+          <MateriaCard key={index} materia={materia} />
         ))}
       </div>
     </div>
   );
 };
 
-export default GenreSelection;
+export default Home;

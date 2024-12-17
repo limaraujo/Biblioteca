@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/escolha_generos.css";
+import "../styles/Home.css";
 
 import ALVC from "../images/ALVC.png";
 import ALGORITMOS from "../images/algoritmos.png";
@@ -77,7 +77,7 @@ const materias = [
   },
 ];
 
-const GenreSelection = () => {
+const Home = () => {
   const handleRedirect = (link) => {
     window.location.href = link;
   };
@@ -108,4 +108,4 @@ const GenreSelection = () => {
   );
 };
 
-export default GenreSelection;
+export default Home;

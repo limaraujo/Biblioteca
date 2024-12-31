@@ -6,11 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build", 
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",  
-    "deploy": "git add dist && git commit -m 'Deploy' && git push origin main" 
+    "deploy": "npm run build && git add ../docs && git commit -m 'Deploy' && git push origin main"
   },
   "dependencies": {
     "axios": "^1.7.9",

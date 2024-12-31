@@ -1,0 +1,22 @@
+#footer {
+    background-color: #121213; /* Fundo escuro para destacar o footer */
+    color: white; /* Texto branco para contraste */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 0.9em; /* Ajusta o tamanho do texto */
+    border-top: 2px solid #f9b421; /* Linha superior para destacar o footer */
+    position: fixed; /* Fixa o footer no final da página */
+    bottom: 0; /* Alinha no rodapé */
+    width: 100%; /* Ocupa toda a largura da tela */
+  }
+  
+  #footer p {
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif; /* Define a fonte */
+  }
+  
+  #footer p:hover {
+    color: #f0db4f; /* Altera a cor ao passar o mouse (exemplo com amarelo) */
+    cursor: pointer; /* Adiciona o cursor de ponteiro para interatividade */
+  }
+  
